@@ -1,55 +1,55 @@
-# VisualFind - Product Discovery Platform
+# Aditya Hari Saputra - Personal Portfolio Website
 
 ## Overview
 
-VisualFind is a modern full-stack web application that provides visual product discovery capabilities. Built with React, Express.js, and PostgreSQL, it enables users to browse products, leave reviews, and discover items through visual search functionality. The application features a clean, responsive design with shadcn/ui components and TailwindCSS styling.
+A modern, responsive personal portfolio website for Aditya Hari Saputra, showcasing expertise in Software Development and IoT (Internet of Things). Built with vanilla HTML, CSS, and JavaScript, featuring smooth animations, dark mode toggle, and mobile-responsive design.
 
 ## System Architecture
 
 ### Frontend Architecture
-- **Framework**: React with TypeScript
-- **Routing**: Wouter for client-side routing
-- **State Management**: TanStack Query for server state management
-- **UI Components**: shadcn/ui component library with Radix UI primitives
-- **Styling**: TailwindCSS with custom CSS variables for theming
-- **Build Tool**: Vite for development and production builds
+- **Framework**: Vanilla HTML, CSS, and JavaScript
+- **Styling**: Custom CSS with CSS variables for theming and dark mode
+- **Typography**: Inter font family from Google Fonts
+- **Icons**: Font Awesome 6.0 icon library
+- **Animations**: CSS keyframe animations and Intersection Observer API
+- **Responsive Design**: CSS Grid and Flexbox with mobile-first approach
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript with ES modules
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon serverless PostgreSQL
-- **Storage**: In-memory storage implementation with interface for database migration
+- **Runtime**: Node.js with Express.js framework (simple static file server)
+- **Language**: JavaScript (ES6+)
+- **Serving**: Static file serving for HTML, CSS, and JavaScript assets
 
 ### Project Structure
 ```
-├── client/           # React frontend application
-├── server/           # Express.js backend API
-├── shared/           # Shared TypeScript schemas and types
-├── migrations/       # Database migration files
-└── dist/            # Production build output
+├── client/           # Frontend portfolio website
+│   ├── index.html   # Main HTML structure
+│   └── src/
+│       ├── index.css # Styles with dark mode support
+│       └── main.js   # Interactive functionality
+├── server/          # Simple Express server
+│   └── simple.js    # Static file server
 ```
 
 ## Key Components
 
-### Database Schema
-The application uses four main entities:
-- **Products**: Core product information with pricing, descriptions, and ratings
-- **Reviews**: User reviews linked to products with ratings and comments
-- **Testimonials**: Customer testimonials with avatars and roles
-- **Newsletter Subscriptions**: Email subscriptions for marketing
+### Website Sections
+The portfolio website includes five main sections:
+- **Hero Section**: Introduction with name, title, bio, and call-to-action buttons
+- **Skills Section**: Technical expertise displayed in interactive cards
+- **Portfolio Section**: Featured projects with descriptions and technology tags
+- **Contact Section**: Contact information, social links, and functional contact form
+- **Footer**: Simple branding and copyright information
 
-### API Endpoints
-- `GET /api/products` - Fetch products with optional filtering
-- `GET /api/products/:id` - Get single product details
-- `GET /api/products/:id/reviews` - Get product reviews
-- `POST /api/products/:id/reviews` - Create new review
-- `POST /api/newsletter/subscribe` - Newsletter subscription
+### Featured Projects
+1. **Smart Clothes Dryer Monitoring System**: IoT-based automation using LDR and rain sensors with Blynk integration
+2. **Telemedicine Slide Scanner Viewer**: Medical image viewer using OpenSlide and OpenSeadragon
+3. **Smart Security System**: ESP32-CAM based home security with vibration and door sensors
 
-### Frontend Pages
-- **Home**: Product browsing, visual search, testimonials, newsletter signup
-- **Product Detail**: Individual product view with reviews and detailed information
-- **404**: Not found page with helpful messaging
+### Interactive Features
+- **Dark Mode Toggle**: Persistent theme switching with localStorage
+- **Smooth Scrolling**: Navigation between sections with smooth animations
+- **Contact Form**: Functional form with validation and success notifications
+- **Responsive Design**: Mobile-friendly layout with hamburger menu
 
 ## Data Flow
 
@@ -95,7 +95,11 @@ The application uses four main entities:
 
 ## Changelog
 
-- July 04, 2025. Initial setup
+- July 04, 2025: Portfolio website completed for Aditya Hari Saputra
+  - Built responsive HTML/CSS/JS portfolio with dark mode
+  - Added hero section, skills, portfolio, contact form
+  - Implemented smooth animations and mobile navigation
+  - Featured 3 IoT and software development projects
 
 ## User Preferences
 
