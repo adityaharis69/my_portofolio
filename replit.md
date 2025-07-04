@@ -96,10 +96,11 @@ The portfolio website includes five main sections:
 ## Changelog
 
 - July 04, 2025: Portfolio website completed for Aditya Hari Saputra
-  - Built responsive HTML/CSS/JS portfolio with dark mode
+  - Built responsive HTML/CSS/JS portfolio with dark mode as default
   - Added hero section, skills, portfolio, contact form
   - Implemented smooth animations and mobile navigation
   - Featured 3 IoT and software development projects
+  - Updated design to use dark theme by default with light mode toggle
 
 ## User Preferences
 

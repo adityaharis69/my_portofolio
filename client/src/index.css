@@ -5,12 +5,30 @@
   box-sizing: border-box;
 }
 
-/* CSS Variables */
+/* CSS Variables - Dark Mode Default */
 :root {
   --primary-color: #6366f1;
   --primary-dark: #4f46e5;
   --secondary-color: #10b981;
   --accent-color: #f59e0b;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-light: #9ca3af;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-dark: #0f1419;
+  --border-color: #374151;
+  --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --gradient-secondary: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --border-radius: 0.5rem;
+  --transition: all 0.3s ease;
+}
+
+/* Light mode variables */
+.light-mode {
   --text-primary: #1f2937;
   --text-secondary: #6b7280;
   --text-light: #9ca3af;
@@ -21,21 +39,6 @@
   --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  --gradient-secondary: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  --border-radius: 0.5rem;
-  --transition: all 0.3s ease;
-}
-
-/* Dark mode variables */
-.dark-mode {
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --text-light: #9ca3af;
-  --bg-primary: #111827;
-  --bg-secondary: #1f2937;
-  --bg-dark: #0f1419;
-  --border-color: #374151;
 }
 
 /* Base styles */

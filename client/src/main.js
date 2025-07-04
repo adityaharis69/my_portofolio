@@ -74,27 +74,33 @@ function initializeThemeToggle() {
     const body = document.body;
     const icon = themeToggle.querySelector('i');
 
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     
     if (currentTheme === 'dark') {
         body.classList.add('dark-mode');
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
+    } else {
+        body.classList.add('light-mode');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     }
 
     themeToggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-        
-        // Update icon
+        // Toggle between dark and light mode
         if (body.classList.contains('dark-mode')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-            localStorage.setItem('theme', 'dark');
-        } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
             localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
         }
     });
 }
