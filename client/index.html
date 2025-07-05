@@ -8,6 +8,11 @@
     <meta property="og:title" content="Aditya Hari Saputra - Software Developer & IoT Enthusiast">
     <meta property="og:description" content="Personal portfolio showcasing expertise in software development and IoT solutions">
     <meta property="og:type" content="website">
+    <!-- atau pakai png -->
+    <link rel="icon" href="/client/src/img/logo.ico" sizes="128x128" type="image/png" />
+     <!-- <img src="/client/src/img/logo.png" alt="Logo" style="width:150px; height:150px;" /> -->
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,12 +23,12 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">AHS</a>
+             <div class="nav-logo">
+                <a href="#home"> <img src="/client/src/img/logo.png" alt="Logo AHS"> </a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#portfolio" class="nav-link">Portfolio</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <button class="theme-toggle" id="theme-toggle">
@@ -42,63 +47,108 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Aditya Hari Saputra</span>
-                </h1>
-                <p class="hero-subtitle">Software Developer | IoT Enthusiast</p>
-                <p class="hero-description">
-                    A passionate engineer building impactful solutions through software and smart devices.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <div class="hero-labels">
+                    <div class="hero-label left">
+                        <h3>developer</h3>
+                        <p>Software engineer specializing in modern web technologies and IoT systems.</p>
+                    </div>
+                    <div class="hero-label right">
+                        <h3>&lt;coder&gt;</h3>
+                        <p>Full stack developer who writes clean, elegant and efficient code.</p>
+                    </div>
+                </div>
+                <div class="hero-main">
+                    <h1 class="hero-title">
+                        Hey, I'm <span class="highlight">Aditya</span>
+                    </h1>
+                    <div class="hero-subtitle-container">
+                        <p class="hero-subtitle typing-text">Software Developer | IoT Enginier | Hardware Engineer</p>
+                        <div class="code-snippets">
+                            <div class="code-line">function() {</div>
+                            <div class="code-line">&nbsp;&nbsp;return "Hello World";</div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-avatar">
-                    <i class="fas fa-user-circle"></i>
+                <div class="hero-avatar-container">
+                    <div class="hero-avatar">
+                        <div class="avatar-face">
+                            <div class="avatar-features">
+                                <div class="avatar-eyes">
+                                    <div class="eye left-eye"></div>
+                                    <div class="eye right-eye"></div>
+                                </div>
+                                <div class="avatar-mouth"></div>
+                            </div>
+                        </div>
+                        <div class="artistic-overlay">
+                            <div class="paint-stroke stroke-1"></div>
+                            <div class="paint-stroke stroke-2"></div>
+                            <div class="paint-stroke stroke-3"></div>
+                            <div class="paint-stroke stroke-4"></div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-code">IoT</div>
+                        <div class="floating-tech">C#</div>
+                        <div class="floating-code">Arduino</div>
+                        <div class="floating-tech">Python</div>
+                        <div class="floating-tech">C++</div>
+                        <div class="floating-code">C#</div>
+                        <div class="floating-code">C</div>
+                        <div class="floating-tech">ESP32</div>
+                        <div class="floating-code">Go</div>
+
+                    </div>
                 </div>
             </div>
         </div>
         <div class="hero-scroll">
-            <a href="#skills" class="scroll-indicator">
+            <a href="#about" class="scroll-indicator">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Full-stack Web Development</h3>
-                    <p>Building robust web applications with modern frameworks and technologies</p>
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-divider"></div>
+            <p class="section-subtitle">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Get to know me!</h3>
+                    <p>I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.</p>
+                    
+                    <p>I also like sharing content related to the stuff that I have learned over the years in <strong>Web Development</strong> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="https://linkedin.com/in/aditya-hari-saputra" target="_blank" class="text-link">LinkedIn</a> and <a href="https://instagram.com/adityaharis" target="_blank" class="text-link">Instagram</a> where I post useful content related to Web Development and Programming.</p>
+                    
+                    <p>I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.</p>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-microchip"></i>
+                
+                <div class="about-skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Embeded</span>
+                        <span class="skill-tag">Postgresql</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">ESP-IDF</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Robotic</span>
                     </div>
-                    <h3>Embedded Systems & IoT</h3>
-                    <p>Developing smart devices and connected systems for real-world applications</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-cpu"></i>
-                    </div>
-                    <h3>Microcontrollers</h3>
-                    <p>Expert in ESP32, Arduino, and other microcontroller platforms</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>REST APIs & Database Integration</h3>
-                    <p>Creating scalable backend solutions and seamless data integration</p>
                 </div>
             </div>
         </div>
@@ -107,7 +157,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">My Projects</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
@@ -247,7 +297,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Made with ❤️ by Aditya Hari Saputra</p>
+            <p>Made with by Aditya Hari Saputra</p>
         </div>
     </footer>
 
